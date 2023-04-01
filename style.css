@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container { 
+    /* 1140+15px+15px because on mobile, eetc we have 15px from left and right */
+    max-width: 1170px; 
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    /* один раз указали line-height и больше нигде не заморачиваемся */
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    /* можно это и не писать, ни на что не влияет */
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: #6C63FF;
+}
+
+header {
+    height: 80px;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+
+h1,
+h3,
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+
+    width: 120px;
+    height: 40px;
+
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section {
+    padding: 100px 0px;
+    flex-grow: 1;
+}
+
+.card-wrap{
+    display: flex;
+    gap: 14px;
+    width: 370px;
+}
+.card {
+    background: #FFFFFF;
+    border: 2px solid #E7E7E7;
+    border-radius: 5px;
+    padding: 46px 20px;
+    /* the lowest width on phone */
+    width: 330px;
+    /* give similar space to every card */
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 22px;
+    max-width: 280px;
+}
+
+.card-img{
+    margin: 40px 0 36px;
+}
+
+p span{
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+footer img{
+    margin-right: 10px;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries for smaller devices
+@media screen and (min-width: 576px) {
+    .card-wrap {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .card {
+      width: calc(50% - 7px);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      width: calc(33.33% - 9px);
+    }
+  } */
